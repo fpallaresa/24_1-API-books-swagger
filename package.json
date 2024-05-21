@@ -8,7 +8,7 @@
     "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "start": "ts-node-dev ./src/index.ts",
+    "start": "ts-node-dev --inspect -- ./src/index.ts",
     "start:pro": "npm run build && node ./dist/index.js",
     "build": "tsc",
     "build:swagger-json": "ts-node-dev ./src/utils/generate-swagger-json.ts --ingore-watch"
